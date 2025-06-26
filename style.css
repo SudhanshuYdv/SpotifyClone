@@ -1,0 +1,289 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.invert{
+    filter: invert(1); 
+    /* turned black - white  */
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+     background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7%;
+}
+
+#left{
+    height: 98%;
+    width: 24%;
+    display: flex; /* Ensure it's using flex layout */
+    flex-direction: column; /* Stack the elements vertically */
+    gap: 1%;
+}
+
+#lefttop{
+    background-color: rgb(22, 20, 22);
+    width: 100%;
+    height: 25%;
+    padding: 3%; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensures padding doesn't affect the total height */
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.h{
+    
+    color: aliceblue;
+}
+
+.hh{
+    margin-left: 5%;
+    font-size: 140%;
+    color: aliceblue;
+}
+
+
+
+
+#leftright{
+    background-color: rgb(22, 20, 22);
+    width: 100%;
+    height: 74%;
+}
+
+.y{
+    display: flex;
+ width: 100%;
+ height: 10%;
+ margin-left: 5%;
+}
+
+#right{
+    height: 98%;
+    width: 74%;
+    background-color: rgb(22, 20, 22);
+    
+}
+
+#nav{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(66, 63, 66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+#Login{
+    right: 1.6%;
+}
+
+.svgl{
+    position: absolute;
+    left: 1%;
+    height: 50%;
+}
+.svgr{
+    position: absolute;
+    left: 3.5%;
+    height: 50%;
+}
+
+.svglo{
+ 
+    width: 10%;
+    
+}
+.svgh{
+   width: 8%;
+}
+.svgs{
+    width: 10%;
+}
+
+.svgp{
+    margin: 3%;
+    margin-right: 0%;
+    height: 80%;
+}
+
+#s{
+    width: 100%;
+    height: 92%;
+    padding: 2%;
+    box-sizing: border-box; /* Ensures padding doesn't affect the total height */
+    
+}
+.pic{
+    width: 96%;
+    margin: 2%;
+}
+
+.card{
+    height: 30%;
+    width: 15%;
+    margin: 2%;
+    background-color: rgb(43, 42, 43);
+    position: relative;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto a new line */
+    max-height: 78%;
+    overflow-y: scroll;
+    
+}
+
+.play
+{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: rgb(80, 216, 105);
+    right: 6%;
+    bottom: 40%;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease; /* Added transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .play{
+    bottom: 48%;
+    opacity: 1;
+}
+
+.svgpl{
+    width: 60%;
+}
+
+/* Style the scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar {
+    width: 12px; /* width of the scrollbar */
+    height: 12px; /* height of the scrollbar for horizontal scroll */
+}
+
+/* Style the scrollbar handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 29, 45); /* the color of the scrollbar thumb */
+    border-radius: 10px; /* rounded corners */
+}
+
+/* Style the scrollbar track (background behind the thumb) */
+::-webkit-scrollbar-track {
+    background-color: #000000; /* background color of the track */
+    border-radius: 10px;
+} 
+
+
+
+.bt{
+    position: absolute;
+    top: 25%;
+    font-weight: bold;
+    height: 50%;
+    width: 7%;
+    border-radius: 50%;
+    background-color:rgb(66, 63, 66);
+    color: white;
+    font-size: 12px; /* Initial font size */
+}
+
+.bt:hover{
+    background-color:rgb(66, 63, 66);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.btsp{
+    right: 10%;    
+    background-color: aliceblue;
+    color: #000;  
+}
+
+.btl:hover{
+    background-color:rgb(33, 32, 33);
+}
+
+.player{
+    position: absolute;
+    bottom: 2%;
+    padding: 1.7%;
+   width: 66%;
+   background-color: rgb(114, 123, 101);
+   border-radius: 5%;
+}
+
+.playerbt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pbt{
+    width: 5%;
+}
+
+.list{
+    margin: 8%;
+    overflow-y: scroll;
+    max-height: 70%;
+    
+}
+
+
+
+.list li{
+    word-wrap:break-word;
+    font-size: 15px;
+    font-weight: bold;
+    color:aliceblue;
+    margin: 7%;
+    display: flex;
+    gap: 17%;
+    border: 2px solid;
+    padding: 3%;
+    width: 85%;
+    border-radius: 5%;
+    justify-content: space-between;
+}
+
+.seekbar{
+    width: 66%;
+    height: .5%;
+    border: 2px solid white;
+    background-color: rgb(32, 30, 30);
+    position: fixed;
+    bottom: 3.5%;
+    border-radius: 20%;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(9, 9, 9);
+    position: absolute;
+    bottom: -190%;
+    left: -1%;
+    border: 2px solid white
+}
